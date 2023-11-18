@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Inserting Data into a MySQL Database</h1>
+    <p>This example connects to a MySQL database, runs an INSERT query to insert data into a "users" table, and then displays a success message or an error message.</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            
+            <?php <br>
+            // Database connection settings <br>
+            $hostname = "localhost"; <br>
+            $username = "your_username"; <br>
+            $password = "your_password"; <br>
+            $database = "your_database";
+             <br>
+            // Create a database connection <br>
+            $connection = mysqli_connect($hostname, $username, $password, $database); <br>
+            
+            // Check the connection <br>
+            if (!$connection) { <br>
+                die("Connection failed: " . mysqli_connect_error()); <br>
+            } <br>
+            
+            // SQL query to retrieve data from a table <br>
+            $sql = "SELECT id, name, email FROM users"; <br>
+            $result = mysqli_query($connection, $sql); <br>
+            
+            // Check if there are rows in the result <br>
+            if (mysqli_num_rows($result) > 0) { <br>
+                while ($row = mysqli_fetch_assoc($result)) { <br>
+                    echo "ID: " . $row["id"] . " - Name: " . $row["name"] . " - Email: " . $row["email"] . "< br>"; <br>
+                } <br>
+            } else { <br>
+                echo "No records found."; <br>
+            } <br>
+            
+            // Close the database connection <br>
+            mysqli_close($connection); <br>
+            ?> <br>
+
+</div>
+</body>
+</html>

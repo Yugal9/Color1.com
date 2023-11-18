@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+   <link rel="stylesheet" href="java.css">
+</head>
+<body>
+    <h1>BASIC PROGRAMMING CONSTRUCTS</h1>
+    <div class="container">
+    <div class="div1">
+    <h2>Code</h2>
+    <p > public class SumOfDigitsExample4  <br>
+        {  <br>
+        //function that finds the sum of digits of a number  <br>
+        static int findSum(int number)  <br>
+        {  
+        //variable that stores the sum          <br>
+        int sum;      
+        //calculates sum in a single line  <br>
+        for (sum = 0; number > 0; sum = sum + number % 10, number = number / 10);  <br>
+        //returns the sum  <br>
+        return sum;  <br>
+        }  <br>
+        //driver code  <br>
+        public static void main(String args[])  <br>
+        {  <br>
+        int number = 7812089;  <br>
+        //calling the user-defined method and prints the result   <br>
+        System.out.println("The sum of digits: "+findSum(number));  <br>
+        }  <br>
+        }  
+        </p>
+    </div>
+        <div class="div1">
+        <h2>Output</h2>
+        <img src="bsp10.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

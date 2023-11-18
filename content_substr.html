@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+   <link rel="stylesheet" href="java.css">
+</head>
+<body>
+    <h1>String</h1>
+    <div class="container">
+    <div class="div1">
+    <h2>Code</h2>
+    <p >public class CountCheck { <br>   
+        public static void main(String[] args) {    <br>
+                 int vCount = 0, cCount = 0;    <br>
+      String str = "Java Programming";    <br>
+     str = str.toLowerCase();    <br>
+      for(int i = 0; i < str.length(); i++) {    <br>
+          if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {   <br> 
+            
+                    vCount++;    <br>
+                }    <br>
+               <br>
+                else if(str.charAt(i) >= 'a' && str.charAt(i)<='z') {      
+                <br>
+                    cCount++;    <br>
+                }    <br>
+            }    <br>
+            System.out.println("Number of vowels: " + vCount);    <br>
+            System.out.println("Number of consonants: " + cCount);    <br>
+        }    <br>
+    }   
+        </p>
+    </div>
+        <div class="div1">
+        <h2>Output</h2>
+        <img src="str1.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

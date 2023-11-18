@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Creating and Using Sessions</h1>
+    <p>In this example, we start a session, set session variables to store user information, retrieve the session data, and then end the session.</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            
+            <?php <br>
+// Start a session <br>
+session_start(); <br>
+
+// Set session variables <br>
+$_SESSION["username"] = "JohnDoe"; <br>
+$_SESSION["email"] = "john@example.com"; <br>
+
+// Retrieve and display session data <br>
+echo "Welcome, " . $_SESSION["username"] . "! Your email is " . $_SESSION["email"]; <br>
+// End the session <br>
+session_destroy(); <br>
+?> <br>
+
+            <h2>OUTPUT</h2><br>
+            <p class="p1" style="background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+                Welcome, JohnDoe! Your email is john@example.com
+
+
+            </p>
+
+</div>
+</body>
+</html>

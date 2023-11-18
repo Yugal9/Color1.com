@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --bg-color: #222327;
+    --text-color:#fff;
+    --main-color: #29fd53;
+}
+body{
+    min-height: 100vh;
+     background: var(--bg-color);
+    color: var(--text-color); 
+    background-image: url(abc2.jpg);
+     backdrop-filter: brightness(35%);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    text-align: center;
+   
+}
+li{
+    text-align: center;
+    
+    display:list-item;
+}
+.code{
+    background-color:bisque;
+    color: black;
+}
+.output{
+    background-color: beige;
+    margin-bottom: 1%;
+    color: #222327;
+}
+p{
+    padding: 17px;
+    
+    background-color: aliceblue;
+    color: black;
+}
+ul li{
+    list-style-type: circle;
+}

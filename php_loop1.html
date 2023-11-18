@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Using for and foreach Loops with Numeric Array</h1>
+    <p>In this example, we have a numeric array called $fruits. We use a for loop to iterate through the array by index and a foreach loop to iterate through the array directly.</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            
+            <?php<br>
+// Numeric Array<br>
+$fruits = array("Apple", "Banana", "Cherry", "Date");<br>
+
+// Using a for loop to iterate through the array<br>
+echo "Using for loop:< br>";<br>
+for ($i = 0; $i < count($fruits); $i++) {<br>
+    echo $fruits[$i] . " ";<br>
+}<br>
+
+echo "< br>";<br>
+
+// Using a foreach loop to iterate through the array<br>
+echo "Using foreach loop:< br>";<br>
+foreach ($fruits as $fruit) {<br>
+    echo $fruit . " ";<br>
+}<br>
+?><br>
+
+    
+            <h2>OUTPUT</h2><br>
+          <p class="p1" style="background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            Using for loop:<br>
+            Apple Banana Cherry Date <br>
+            Using foreach loop:<br>
+            Apple Banana Cherry Date <br>
+            
+           </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Retrieving and Using a Cookie</h1>
+    <p>In this example, we check if the "user" cookie exists using isset($_COOKIE["user"]). If it exists, we retrieve its value and display a personalized message. If it doesn't exist, we display a generic "Welcome, guest!" message.</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            
+            <?php <br>
+            // Check if the cookie exists <br>
+            if (isset($_COOKIE["user"])) { <br>
+                $user = $_COOKIE["user"]; <br>
+                echo "Welcome back, " . $user . "!"; <br>
+            } else { <br>
+                echo "Welcome, guest!"; <br>
+            } <br>
+            ?> <br>
+            
+            <h2>OUTPUT</h2><br>
+            <p class="p1" style="background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+                If the "user" cookie exists in the user's browser and has not expired, the output will be: <br>
+                Welcome back, JohnDoe! <br>
+                If the "user" cookie does not exist, the output will be: <br>
+                Welcome, guest!
+
+
+            </p>
+
+</div>
+</body>
+</html>

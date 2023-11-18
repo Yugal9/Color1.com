@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Associative Array</h1>
+    <p>In this example, we create an associative array called $person with key-value pairs representing information about a person. We use the print_r function to display the contents of the associative array.</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            
+            <?php<br>
+            // Define an associative array with key-value pairs<br>
+            $person = array(<br>
+                "name" => "John",<br>
+                "age" => 30,<br>
+                "city" => "New York"<br>
+            );<br>
+            
+            // Output the array using print_r<br>
+            echo "Associative Array:< br>";<br>
+            print_r($person);<br>
+            ?><br>
+    
+            <h2>OUTPUT</h2><br>
+          <p class="p1" style="background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            Associative Array: <br>
+Array <br>
+(<br>
+    [name] => John<br>
+    [age] => 30<br>
+    [city] => New York<br>
+)<br>
+
+
+           </p>
+</div>
+</body>
+</html>

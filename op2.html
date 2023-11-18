@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Intersect</h1>
+    <p>The SQL INTERSECT clause/operator is used to combine two SELECT statements, but returns rows only from the first SELECT statement that are identical to a row in the second SELECT statement. This means INTERSECT returns only common rows returned by the two SELECT statements.
+
+        Just as with the UNION operator, the same rules apply when using the INTERSECT operator. MySQL does not support the INTERSECT operator.
+        <br>
+        <h2>Syntax</h2><br>
+        <p class="p1">SELECT column1 [, column2 ]<br>
+            FROM table1 [, table2 ]<br>
+            [WHERE condition]<br>
+            
+            INTERSECT<br>
+            
+            SELECT column1 [, column2 ]<br>
+            FROM table1 [, table2 ]<br>
+            [WHERE condition]
+            <br>
+          </p>
+          <h2>Example</h2><br>
+          <p class="p1">
+            <div class="flex">
+     <img src="op2.png" alt="output" class="img" style="display: inline-block, height=12px;">
+     <img src="op2.5.png" alt="output" class="img" style="display: inline-block, height=12px;">
+    </div>
+
+            </p>
+</div>
+</body>
+</html>

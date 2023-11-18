@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Using while and do...while Loops to Count Down</h1>
+    <p>In this example, we use a while loop to count down from 5 to 1, and then a do...while loop to do the same. Both loops print the numbers from 5 to 1..</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            
+            <?php <br>
+            // Using a while loop to count down from 5 to 1 <br>
+            echo "Using while loop:< br>"; <br>
+            $counter = 5; <br>
+            while ($counter >= 1) { <br>
+                echo $counter . " "; <br>
+                $counter--; <br>
+            } <br>
+            
+            echo "< br>"; <br>
+            
+            // Using a do...while loop to count down from 5 to 1 <br>
+            echo "Using do...while loop:< br>"; <br>
+            $counter = 5; <br>
+            do { <br>
+                echo $counter . " "; <br>
+                $counter--; <br>
+            } while ($counter >= 1); <br>
+            ?> <br>
+            
+
+    
+            <h2>OUTPUT</h2><br>
+          <p class="p1" style="background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            Using while loop: <br>
+            5 4 3 2 1  <br>
+            Using do...while loop: <br>
+            5 4 3 2 1  <br>
+            
+           </p>
+</div>
+</body>
+</html>

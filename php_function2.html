@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>A Function to Generate a Random Number </h1>
+    <p>In this example, we define a function called generateRandomNumber that generates a random number between 1 and 10 using the rand function. We then call this function and display the generated random number. The specific random number you see in the output will vary each time you run the script.</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            
+            <?php<br>
+            // Define a function to generate a random number between 1 and 10<br>
+            function generateRandomNumber() {<br>
+                $randomNumber = rand(1, 10);<br>
+                return $randomNumber;<br>
+            }<br>
+            
+            // Call the function<br>
+            $random = generateRandomNumber();<br>
+            
+            // Output the result<br>
+            echo "Random number between 1 and 10: " . $random;<br>
+            ?><br>
+            
+
+
+          <h2>OUTPUT</h2><br>
+          <p class="p1" style="background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            Random number between 1 and 10: [A random number between 1 and 10]
+
+<br>
+           </p>
+</div>
+</body>
+</html>

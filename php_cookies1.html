@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Setting a Cookie</h1>
+    <p>In this example, we'll set a cookie with a name, value, and expiration time. The code below sets a cookie named "user" with the value "JohnDoe" that expires in one hour. In this example, the setcookie function is used to set a cookie.</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            
+            <?php <br>
+            // Set a cookie with a name, value, and expiration time <br>
+            $cookie_name = "user"; <br>
+            $cookie_value = "JohnDoe"; <br>
+            $expiration_time = time() + 3600; // 1 hour from the current time <br>
+            setcookie($cookie_name, $cookie_value, $expiration_time, "/"); <br>
+            ?> <br>
+            
+</div>
+</body>
+</html>

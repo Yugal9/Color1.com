@@ -1,0 +1,55 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+   <link rel="stylesheet" href="java.css">
+</head>
+<body>
+    <h1>2D Array</h1>
+    <div class="container">
+    <div class="div1">
+    <h2>Code</h2>
+    <pre>
+        class Transpose {
+            public static void main(String[] args) {
+                int rows = 3, columns = 3;
+                // Initialize a matrix
+                int[][] matrix = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+                // Create a matrix to store the transpose
+                int[][] transpose = new int[columns][rows];
+                // Find the transpose of the matrix
+                for (int i = 0; i < rows; i++) {
+                    for (int j = 0; j < columns; j++) {
+                        transpose[j][i] = matrix[i][j];
+                    }
+                }
+                // Display the original matrix
+                System.out.println("Original Matrix:");
+                displayMatrix(matrix);
+        
+                // Display the transpose matrix
+                System.out.println("\nTranspose of the Matrix:");
+                displayMatrix(transpose);
+            }
+            // Helper method to display a matrix
+            public static void displayMatrix(int[][] matrix) {
+                for (int[] row : matrix) {
+                    for (int num : row) {
+                        System.out.print(num + " ");
+                    }
+                    System.out.println();
+                }
+            }
+        }
+    </pre>
+    </div>
+        <div class="div1">
+        <h2>Output</h2>
+        <img src="2d10.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
+    

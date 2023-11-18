@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Exception Handling</h1>
+    <p>An exception is an error which disrupts the normal flow of program instructions. PL/SQL provides us the exception block which raises the exception thus helping the programmer to find out the fault and resolve it. <br>
+
+        There are two types of exceptions defined in PL/SQL: <br>
+        
+        User defined exception. <br>
+        Pre defined exceptions. <br><br>
+        <h2>Pre defined Exceptions</h2>
+        <p>PL/SQL provides many pre-defined exceptions, which are executed when any database rule is violated by a program. For example, the predefined exception NO_DATA_FOUND is raised when a SELECT INTO statement returns no rows </p>
+        <h2>User defined exception</h2>
+        <p>PL/SQL facilitates their users to define their own exceptions according to the need of the program. A user-defined exception can be raised explicitly, using either a RAISE statement or the procedure DBMS_STANDARD.RAISE_APPLICATION_ERROR.</p>
+        <h2>Syntax</h2>
+      <p class="p1">  
+        WHEN exception THEN 
+            statement;</p>
+            <h2>Structure</h2>
+      <pre>  DECLARE
+        declarations section;
+      BEGIN
+        executable command(s);
+         EXCEPTION
+WHEN exception1 THEN
+statement1;
+WHEN exception2 THEN
+statement2;
+ [WHEN others THEN]
+ /* default exception handling code */ 
+        END;</pre>
+        <img src="plsql12.png" alt="" class="imga" style=" height:300px"> <br><br>
+        <img src="plsql12.5.png" alt="" class="imga" style="height:200px">
+
+       
+</div>
+</body>
+</html>

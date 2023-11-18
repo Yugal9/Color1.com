@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Reading a file</h1>
+    <p>In this example, we check if the file "example.txt" exists, and if it does, we open it in read mode and display its content using fgets.</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            
+            <?php <br>
+            // File path <br>
+            $filename = "example.txt"; <br>
+            
+            // Check if the file exists <br>
+            if (file_exists($filename)) { <br>
+                // Open the file in read mode <br>
+                $file = fopen($filename, "r"); <br>
+            
+                // Read and display the file content <br>
+                if ($file) { <br>
+                    while (!feof($file)) { <br>
+                        echo fgets($file); <br>
+                    } <br>
+                    fclose($file); <br>
+                } else { <br>
+                    echo "Unable to open the file for reading."; <br>
+                } <br>
+            } else { <br>
+                echo "The file does not exist."; <br>
+            } <br>
+            ?> <br>
+                   
+            <h2>OUTPUT</h2><br>
+          <p class="p1" style="background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+                        This is some text that we are writing to the file.
+          </p>
+</div>
+</body>
+</html>

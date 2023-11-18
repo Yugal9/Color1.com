@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Variables & Constants</h1>
+    <p>PL/SQL is a block structured language that enables developers to combine the power of SQL with procedural statements.All the statements of a block are passed to oracle engine all at once which increases processing speed and decreases the traffic.  <br>
+        You can declare constants and variables in the declarative part of any PL/SQL block, subprogram, or package. Declarations allocate storage for a value, specify its datatype, and specify a name that you can reference. Declarations can also assign an initial value and impose the NOT NULL constraint.
+        <br><br>
+        A variable is a reserved memory area for storing the data of a particular datatype. It is an identifier which is identifies memory locations where data is stored. This memory is reserved at the time of declaration of a variable which is done in the DECLARE section of any PL/SQL block. <br><br> </p>
+        <h2>Syntax</h2>
+        <p class="p1">Variable_name  datatype(size);</p>
+       <h2> Rules for declaring a Variable in PL/SQL</h2>
+ <p> Following are some important rules to keep in mind while defining and using a variable in PL/SQL: <br><br>
+
+A variable name is user-defined. It should begin with a character and can be followed by maximum of 29 characters.
+Keywords (i.e, reserved words ) of PL/SQL cannot be used as variable name. <br>
+Multiple variables can be declared in a single line provided they must be separated from each other by at least one space and comma.<br>
+For eg: a,b,c int;<br><br>
+
+Variable names containing two words should not contain space between them. It must be covered by underscore instead.
+For eg: Roll_no<br>
+
+A variable name is case sensitive, which means a_var is not same as A_var<br>
+</p>
+ <h2>PL/SQL Constants</h2> <p>
+Constants are those values which when declared remain fixed throughout the PL/SQL block. For declaring constants, a constant keyword is used. <br>
+<br>
+
+Syntax for declaring constants: <br>
+
+Constant_Name  constant  Datatype(size) := value; <br></p>
+</div>
+</body>
+</html>

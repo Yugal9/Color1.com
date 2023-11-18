@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+   <link rel="stylesheet" href="java.css">
+</head>
+<body>
+    <h1>BASIC PROGRAMMING CONSTRUCTS</h1>
+    <div class="container">
+    <div class="div1">
+    <h2>Code</h2>
+    <p >import java.util.Scanner; <br>
+
+        public class dec <br>
+        { <br>
+           public static void main(String[] args) <br>
+           { <br>
+              int decimal, i=0; <br>
+              int[] binary = new int[20]; <br>
+              
+              Scanner scan = new Scanner(System.in); <br>
+              
+              System.out.print("Enter the Decimal Number: "); <br>
+              decimal = scan.nextInt(); <br>
+              
+              while(decimal != 0) <br>
+              { <br>
+                 binary[i] = decimal%2; <br>
+                 i++; <br>
+                 decimal = decimal/2; <br>
+              } <br>
+              
+              System.out.print("\nEquivalent Binary Value = "); <br>
+              for(i=(i-1); i>=0; i--) <br>
+                 System.out.print(binary[i]); <br>
+           } <br>
+        }
+        </p>
+    </div>
+        <div class="div1">
+        <h2>Output</h2>
+        <img src="bsp7.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Writign to a file.</h1>
+    <p>In this example, we open a file called "example.txt" in write mode, write some text to it using fwrite, and then close the file.</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            
+            <?php <br>
+            // File path <br>
+            $filename = "example.txt"; <br>
+            
+            // Open the file in write mode <br>
+            $file = fopen($filename, "w"); <br>
+            
+            // Check if the file was opened successfully <br>
+            if ($file) { <br>
+                // Content to write <br>
+                $content = "This is some text that we are writing to the file.\n"; <br>
+                
+                // Write the content to the file <br>
+                fwrite($file, $content); <br>
+            
+                // Close the file <br>
+                fclose($file); <br>
+                echo "File written successfully!"; <br>
+            } else { <br>
+                echo "Unable to open the file."; <br>
+            } <br>
+            ?> <br>
+            
+
+    
+            <h2>OUTPUT</h2><br>
+          <p class="p1" style="background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            File written successfully! <br>
+            This is some text that we are writing to the file.
+          </p>
+</div>
+</body>
+</html>

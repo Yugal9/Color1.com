@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table2.css">
+</head>
+<body>
+    <div class="container">
+    <h1>String Concatenation</h1>
+    <p>In this PHP program, we create two string variables, $string1 and $string2. We then concatenate them using the . operator to create a new string, $combinedString. Finally, we use the strlen function to find the length of the combined string and display it.</p>
+ 
+        <h2>Program</h2><br>
+        <p class="p1" style="text-align: left;background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            <?php      <br>
+  // Create a string variable <br>
+  $string1 = "Hello, ";<br>
+
+  // Concatenate two strings<br>
+  $string2 = "World!";<br>
+  $combinedString = $string1 . $string2;<br>
+
+  // Find the length of the string<br>
+  $length = strlen($combinedString);<br>
+
+  // Output the result<br>
+  echo "Combined String: " . $combinedString . "<br>";
+  echo "Length of the Combined String: " . $length;<br>
+?><br>
+
+          </p>
+          <h2>OUTPUT</h2><br>
+          <p class="p1" style="background-color: blueviolet; padding: 3%; width: 70%; margin-left: 15%; border-radius: 4PX;">
+            Combined String: Hello, World! <br>
+            Length of the Combined String: 13<br>
+            
+
+            </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+   <link rel="stylesheet" href="java.css">
+</head>
+<body>
+    <h1>BASIC PROGRAMMING CONSTRUCTS</h1>
+    <div class="container">
+    <div class="div1">
+    <h2>Code</h2>
+    <p >import java.util.Scanner; <br>
+
+        public class binary  <br>
+        { <br>
+           public static void main(String[] args) <br>
+           { <br>
+              int binnum, decnum=0, i=1, rem; <br>
+              Scanner scan = new Scanner(System.in); <br>
+              
+              System.out.print("Enter the Binary Number: "); <br>
+              binnum = scan.nextInt();
+               <br>
+              while(binnum!=0) <br>
+              {
+                 rem = binnum%10; <br>
+                 decnum = decnum + (rem*i); <br>
+                 i = i*2; <br>
+                 binnum = binnum/10; <br>
+              }
+               <br>
+              System.out.println("\nEquivalent Decimal Value = " +decnum); <br>
+           } <br>
+        }
+        </p>
+    </div>
+        <div class="div1">
+        <h2>Output</h2>
+        <img src="bsp8.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

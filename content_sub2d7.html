@@ -1,0 +1,52 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+   <link rel="stylesheet" href="java.css">
+</head>
+<body>
+    <h1>2D Array</h1>
+    <div class="container">
+    <div class="div1">
+    <h2>Code</h2>
+    <pre>
+        import java.util.Scanner;
+
+class uppertriangularmatrix {
+    public static void main(String[] a) {           
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number of rows and columns for the square matrix: ");
+        int n = s.nextInt();
+        int[][] matrix = new int[n][n];
+ System.out.println("Enter matrix elements:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                matrix[i][j] = s.nextInt();
+            }
+        }
+   System.out.println("Upper Triangular Matrix:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (j >= i) {
+                    System.out.print(matrix[i][j] + " ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println(" ");
+        } 
+     }
+}
+
+    </pre>
+    </div>
+        <div class="div1">
+        <h2>Output</h2>
+        <img src="2d7.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
+    
